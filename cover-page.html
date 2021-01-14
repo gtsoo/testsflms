@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+</head>
+<style>
+	body{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+	}
+	
+	.dir-label{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.img-directory{
+		float: left;
+		vertical-align: middle;
+	}
+	
+	.dir-label:hover {
+		color: #ec3838;
+	}
+
+	.separator {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	.separator::before, .separator::after {
+		content: '';
+		flex: 1;
+		border-bottom: 1px solid #000;
+	}
+	.separator::before {
+		margin-right: .25em;
+	}
+	.separator::after {
+		margin-left: .25em;
+	}
+	
+	.p2-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 600px;
+	  /** border: 3px solid #000000; **/	
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+	
+	.p2-1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 500px;
+	  /** border: 3px solid #000000; **/
+	  padding-top:5 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p2-5-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 500px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 5px;
+	}
+
+	.p2-column {
+	  float: left;
+	  width: 25%;
+	  padding: 20px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p2-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.p3-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 500px;
+	  /** border: 3px solid #000000; **/
+	  padding: 10px;
+	}
+
+	.p3-column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 20px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p3-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	/** gallery **/
+	a { text-decoration: none; }
+	
+	.p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  min-height: 600px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	.sub-p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  min-height: 320px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	div.gallery {
+	  border: 1.5px solid #FFFFFF;
+	}
+
+	div.gallery:hover {
+	  border: 1.5px solid #1f4e79;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	  padding-bottom: 0px;
+	}
+
+	div.desc {
+	  padding: 15px;
+	  text-align: left;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	.responsive {
+	  padding: 0 0px;
+	  float: left;
+	  /** width: 24.99999%; **/
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .responsive {
+		width: 49.99999%;
+		margin: 0px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+	  .responsive {
+		width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+</style>
+<body>
+<h2 style="text-align: center;">Directory</h2>
+	<!-- My Assignment -->
+		<a target="_top" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3Dcd1608c13ed543a592103ab607f8b6b5%26fromSF%3DY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="./learn-icon/cv-dir-assign.png" alt="Core Development icon" style="height:40px; width:40px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">My <br>Assignment</div></a>
+
+	<!-- Learning Calendar -->
+		<a target="_top" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D2398684e030c42158add102a6b8d39db%26fromSF%3DY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="./learn-icon/cv-dir-calendar.png" alt="Core Development icon" style="height:40px; width:40px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">Learning <br>Calendar</div></a>
+
+	<!-- Learning Catalog -->
+		<a target="_top" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3a%2f%2fsunwaybpos%2dstage%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dCATALOG%5fSIMPLE%5fSEARCH%26fromSF%3dY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="./learn-icon/cv-dir-catalog.png" alt="Core Development icon" style="height:40px; width:40px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">Learning <br>Library</div></a>
+
+	<br><br>
+	<div class="p1-section"> 
+	<div class ="sub-p1-section">
+		<!-- POLICY & BENEFIT tile -->
+		<div class="responsive" style="padding-top: 10px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1f4e79;">
+		  <img src="./learn-icon/p1-cv-pic1.png" alt="" style="height:150px; width:230px;">  
+		  <div class="desc" style="background-color: #1f4e79; color: 	#FFFFFF; width:230px; height: 120px; padding-top:10px;"><b>POLICY & BENEFIT</b><br><br><div style="font-size: 14px; padding-top: 5px;">Policy & Benefit</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- INDUSTRY & FUNCTIONAL DEVELOPMENT tile -->
+		<div class="responsive" style="padding-top: 10px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #2e75b6;">
+		  <img src="./learn-icon/p1-cv-pic2.png" alt="" style="height:150px; width:230px;">
+		  <div class="desc" style="background-color: #2e75b6; color: 	#FFFFFF; width:230px; height: 120px; padding-top:10px;"><b>INDUSTRY & FUNCTIONAL DEVELOPMENT</b><br><div style="font-size: 14px; padding-top: 5px;">Industry Series</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- SUNWAY RELATED WORK TOOLS / PROCESSES tile -->
+		<div class="responsive" style="padding-top: 10px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1cbee5;">
+		  <img src="./learn-icon/p1-cv-pic3.png" alt="" style="height:150px; width:230px; padding-bottom: 0px;">
+		  <div class="desc" style="background-color: #1cbee5; color: 	#FFFFFF; width:230px; height: 120px; padding-top:10px;"><b>SUNWAY RELATED WORK TOOLS / PROCESSES</b><br><div style="font-size: 14px; padding-top: 5px;">Sunway Related Work Tools / Processes</div>
+			</div></a>
+		  </div>
+		</div>
+		<!-- end sub-p1-section -->
+	</div>
+
+	<div class ="sub-p1-section">
+		<!-- SUNWAY LEADERSHIP COMPETENCIES tile  -->
+		<div class="responsive" style="padding-top: 10px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1f4e79;">
+		  <img src="./learn-icon/p1-cv-pic4.png" alt="" style="height:150px; width:230px;">
+		  <div class="desc" style="background-color: #1f4e79; color: 	#FFFFFF; width:230px; height: 120px; padding-top:10px;"><b>SUNWAY LEADERSHIP COMPETENCIES</b><br><div style="font-size: 14px; padding-top: 5px;">Personal Empowerment & Mindset Shift Series</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- SUSTAINABLE DEVELOPMENT GOALS tile -->
+		<div class="responsive" style="padding-top: 10px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #2e75b6;">
+			<img src="./learn-icon/t5-banner-sdg.jpg" alt="" style="height:150px; width:230px;">
+			<div class="desc" style="background-color: #2e75b6; color: 	#FFFFFF; width:230px; height: 120px; padding-top:10px;"><b>SUSTAINABLE DEVELOPMENT GOALS</b><br><div style="font-size: 14px; padding-top:5px;">Sustainable Development Goals Series</div>
+			</div></a>
+		  </div>
+		</div>
+		<!-- end sub-p1-section -->
+	</div>
+	
+	<!-- end section p1 -->
+	</div>
+	
+	
+	<!-- <div style="padding-bottom: 560px;"></div> -->
+	
+	<div class="separator"><h2 style="padding-left:40px; padding-right:40px;">Recommended Online Resources</h2></div>
+	<div class="p2-section">
+		<div class="p2-row">
+		<!-- Forbes -->
+		  <div class="p2-column">
+		  <a target="_blank" href='https://www.forbes.com/' class="dir-link"><img src="./learn-icon/p2-forbes.png" alt="Forbes" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		
+		<!-- Entrepreneur -->		
+		  <div class="p2-column">
+			<a target="_blank" href=' https://www.entrepreneur.com/ap' class="dir-link"><img src="./learn-icon/p2-entre.png" alt="Entrepreneur" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		
+		<!-- Alison -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://alison.com/' class="dir-link"><img src="./learn-icon/p2-alison.png" alt="Alison" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- Ken --> 
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.kenblanchard.com/' class="dir-link"><img src="./learn-icon/p2-ken.png" alt="KenBlanchard" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="p2-section">
+		<div class="p2-row">
+		  <div class="p2-column">
+		<!-- Future Learn --> 
+			<a target="_blank" href='https://www.futurelearn.com/' class="dir-link"><img src="./learn-icon/p2-future.png" alt="Future Learn" style="width:100%; max-height: 80px;">
+		  </div></a>
+		  
+		<!-- EDX --> 
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.edx.org/' class="dir-link"><img src="./learn-icon/p2-edx.png" alt="edX" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- coursera -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.coursera.org/' class="dir-link"><img src="./learn-icon/p2-coursera.png" alt="Coursera" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- Khan -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.khanacademy.org/' class="dir-link"><img src="./learn-icon/p2-khan.png" alt="Khan Academy" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		</div>
+	</div>
+
+	<div class="p2-5-section">
+	<div class="p3-row">
+	<!-- TEDEd -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://ed.ted.com/' class="dir-link"><img src="./learn-icon/p2-teded.png" alt="TEDEd" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	  
+	<!-- Talks at Google -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://talksat.withgoogle.com/' class="dir-link"><img src="./learn-icon/p2-talks.png" alt="Talks at Google" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	  
+	<!-- Udemy -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://www.udemy.com/' class="dir-link"><img src="./learn-icon/p2-udemy.png" alt="Udemy" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	</div>
+	</div>
+	
+	<div class="separator"><h2 style="padding-left:40px; padding-right:40px;">E-books</h2></div>
+	<div class="p3-section">
+	<div class="p3-row">
+	  <div class="p3-column">
+	  <!-- Bookboon --> 
+		<a target="_blank" href='https://bookboon.com/' class="dir-link"><img src="./learn-icon/p3-bookboon.png" alt="Snow" style="width:100%; max-height: 80px; margin-top: 5px;"></a>
+	  </div>
+	  
+	  <!-- Manybooks --> 
+	  <div class="p3-column">
+		<a target="_blank" href='https://manybooks.net/' class="dir-link"><img src="./learn-icon/p3-manybooks.png" alt="Forest" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	  
+	  <!-- PDFDrive --> 
+	  <div class="p3-column">
+		<a target="_blank" href='https://www.pdfdrive.com/' class="dir-link"><img src="./learn-icon/p3-pdfdrive.png" alt="Mountains" style="width:100%; max-height: 80px; margin-top: 30px;"></a>
+	  </div>
+	</div>
+	</div>
+	
+</body>
