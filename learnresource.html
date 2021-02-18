@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+</head>
+<style>
+	body{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+	}
+	
+	.dir-label{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	
+	.img-directory{
+		float: left;
+		vertical-align: middle;
+	}
+	
+	.dir-label:hover {
+		color: #ec3838;
+	}
+
+	.separator {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	.separator::before, .separator::after {
+		content: '';
+		flex: 1;
+		/** border: 3px solid #000000; **/
+	}
+	.separator::before {
+		margin-right: .25em;
+	}
+	.separator::after {
+		margin-left: .25em;
+	}
+	
+	.p2-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 700px;
+	  /** border: 3px solid #000000; **/	
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+	
+	.p2-1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 600px;
+	  /** border: 3px solid #000000; **/
+	  padding-top:5 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p2-5-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 600px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p2-column {
+	  float: left;
+	  width: 25%;
+	  padding: 10px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p2-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.p3-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 600px;
+	  /** border: 3px solid #000000; **/
+	  padding: 10px;
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p3-column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 20px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p3-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	/** gallery **/
+	a { text-decoration: none; }
+	
+	.top-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  max-height: 60px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 50px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	.p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  min-height: 600px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	.sub-p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  min-height: 320px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	div.gallery {
+	  border: 1.5px solid #FFFFFF;
+	}
+
+	div.gallery:hover {
+	  border: 1.5px solid #1f4e79;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	  padding-bottom: 0px;
+	}
+
+	div.desc {
+	  padding: 15px;
+	  text-align: left;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	.responsive {
+	  padding: 0 0px;
+	  float: left;
+	  /** width: 24.99999%; **/
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .responsive {
+		width: 49.99999%;
+		margin: 0px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+	  .responsive {
+		width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+</style>
+<body>
+	<!-- <div style="padding-bottom: 560px;"></div> -->
+	<!--
+	<div class="separator"><h2 style="padding-left:40px; padding-right:40px;">Recommended Online Resources</h2></div>
+	-->
+	<div style="height: 30px;"><h2 style="padding-left:40px; padding-right:40px;">Recommended Online Resources</h2></div>
+	<br>
+	<div class="p2-section">
+		<div class="p2-row">
+		<!-- Forbes -->
+		  <div class="p2-column">
+		  <a target="_blank" href='https://www.forbes.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-forbes.png" alt="Forbes" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		
+		<!-- Entrepreneur -->		
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.entrepreneur.com/ap' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-entre.png" alt="Entrepreneur" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		
+		<!-- Alison -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://alison.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-alison.png" alt="Alison" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- Ken --> 
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.kenblanchard.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-ken.png" alt="KenBlanchard" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		</div>
+	</div>
+	
+	<div class="p2-section">
+		<div class="p2-row">
+		  <div class="p2-column">
+		<!-- Future Learn --> 
+			<a target="_blank" href='https://www.futurelearn.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-future.png" alt="Future Learn" style="width:100%; max-height: 80px;">
+		  </div></a>
+		  
+		<!-- EDX --> 
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.edx.org/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-edx.png" alt="edX" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- coursera -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.coursera.org/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-coursera.png" alt="Coursera" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		  
+		<!-- Khan -->
+		  <div class="p2-column">
+			<a target="_blank" href='https://www.khanacademy.org/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-khan.png" alt="Khan Academy" style="width:100%; max-height: 80px;"></a>
+		  </div>
+		</div>
+	</div>
+
+	<div class="p2-5-section">
+	<div class="p3-row">
+	<!-- TEDEd -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://ed.ted.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-teded.png" alt="TEDEd" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	  
+	<!-- Talks at Google -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://talksat.withgoogle.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-talks.png" alt="Talks at Google" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	  
+	<!-- Udemy -->
+	  <div class="p3-column">
+		<a target="_blank" href='https://www.udemy.com/' class="dir-link"><img src="https://performancemanager10.successfactors.com/sunwaybposD1/p2-udemy.png" alt="Udemy" style="width:100%; max-height: 80px;"></a>
+	  </div>
+	</div>
+	</div>	
+</body>
