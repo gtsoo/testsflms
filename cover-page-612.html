@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+</head>
+<style>
+	body{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+	}
+	
+	.dir-label{
+		font-family: 'Arial', sans-serif;
+		color: #5e5e5e;
+		text-align: center;
+		font-weight: bold;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	
+	.img-directory{
+		float: left;
+		vertical-align: middle;
+	}
+	
+	.dir-label:hover {
+		color: #ec3838;
+	}
+
+	.separator {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	.separator::before, .separator::after {
+		content: '';
+		flex: 1;
+		border-bottom: 1px solid #000;
+	}
+	.separator::before {
+		margin-right: .25em;
+	}
+	.separator::after {
+		margin-left: .25em;
+	}
+	
+	.p2-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 800px;
+	  /**  border: 3px solid #000000; **/	
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+	
+	.p2-1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 800px;
+	  /** border: 3px solid #000000; **/
+	  padding-top:5 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p2-5-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 800px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p2-column {
+	  float: left;
+	  width: 25%;
+	  padding: 10px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p2-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	* {
+	  box-sizing: border-box;
+	}
+	
+	.p3-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 800px;
+	  /** border: 3px solid #000000; **/
+	  padding: 10px;
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	}
+
+	.p3-column {
+	  float: left;
+	  width: 33.33%;
+	  padding: 20px;
+	  
+	}
+
+	/* Clearfix (clear floats) */
+	.p3-row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	  vertical-align: middle;
+	}
+	
+	/** gallery **/
+	a { text-decoration: none; }
+	
+	.top-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 790px;
+	  max-height: 80px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 5px;
+	  padding-left: 50px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	.p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 960px;
+	  min-height: 500px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 0px;
+	  text-align: center;
+	}
+	
+	.sub-p1-section{
+	  margin: auto;
+	  /** width: 60%; **/
+	  max-width: 960px;
+	  min-height: 200px;
+	  /** border: 3px solid #000000; **/
+	  padding-top: 2.5px;
+	  padding-left: 5px;
+	  padding-right: 5px;
+	  padding-bottom: 2.5px;
+	  text-align: center;
+	}
+	
+	div.gallery {
+	  border: 1.5px solid #FFFFFF;
+	}
+
+	div.gallery:hover {
+	  border: 1.5px solid #1f4e79;
+	}
+
+	div.gallery img {
+	  width: 100%;
+	  height: auto;
+	  padding-bottom: 0px;
+	}
+
+	div.desc {
+	  padding: 15px;
+	  text-align: left;
+	  font-size: 14px;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	.responsive {
+	  padding: 0 0px;
+	  float: left;
+	  /** width: 24.99999%; **/
+	}
+
+	@media only screen and (max-width: 700px) {
+	  .responsive {
+		width: 49.99999%;
+		margin: 0px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+	  .responsive {
+		width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+</style>
+<body style="min-height:500px;">
+<h2 style="text-align: center; padding:0px; height:12px; margin-top:-10px;">Directory</h2>
+	<!-- My Assignment -->
+	<div style="height: 10px"></div>
+	<div class="top-section">
+		<a target="_top" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3Dcd1608c13ed543a592103ab607f8b6b5%26fromSF%3DY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="https://performancemanager10.successfactors.com//sunwaybposD1/cv-dir-assign.png" alt="" style="height:30px; width:30px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">My <br>Assignment</div></a>
+
+	<!-- Learning Calendar -->
+		<a target="_top" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D5416d89cfb6d416fbef17355b54fdb75%26fromSF%3DY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="https://performancemanager10.successfactors.com//sunwaybposD1/cv-dir-calendar.png" alt="" style="height:30px; width:30px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">Learning <br>Calendar</div></a>
+
+	<!-- Learning Catalog -->
+		<a target="_blank" href='https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3a%2f%2fsunwaybpos%2dstage%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dCATALOG%5fSIMPLE%5fSEARCH%26fromSF%3dY&company=sunwaybposD1' class="dir-link">
+		<div class="dir-img-label" style="display: inline-block; vertical-align: middle;">
+		<img src="https://performancemanager10.successfactors.com//sunwaybposD1/cv-dir-catalog.png" alt="" style="height:30px; width:30px;" class="img-directory"></div><div class="dir-label" style="display: inline-block; vertical-align: middle; padding-left:15px; padding-right:60px;">Learning <br>Library</div></a>
+	</div>
+	<div style="height: 10px"></div>		
+	<div class="p1-section"> 
+	<div class ="sub-p1-section">
+		<!-- POLICY & BENEFIT tile -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1f4e79;">
+		  <img src="https://performancemanager10.successfactors.com/sunwaybposD1/p1-cv-pic1.png" alt="" style="height:120px; width:280px;">  
+		  <div class="desc" style="background-color: #1f4e79; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>POLICY & BENEFIT</b><br><div style="font-size: 14px; padding-top: 5px;"><br>Mandatory policies and employee benefits</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- INDUSTRY & FUNCTIONAL DEVELOPMENT tile -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #2e75b6;">
+		  <img src="https://performancemanager10.successfactors.com//sunwaybposD1/sunway/Industry_Tile.jpg" alt="" style="height:120px; width:280px">
+		  <div class="desc" style="background-color: #2e75b6; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>INDUSTRY & FUNCTIONAL DEVELOPMENT</b><br><div style="font-size: 14px; padding-top: 5px;">Industry-focused courses</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- SUNWAY RELATED WORK TOOLS / PROCESSES tile -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1cbee5;">
+		  <img src="https://performancemanager10.successfactors.com/sunwaybposD1/p1-cv-pic3.png" alt="" style="height:120px; width:280px; padding-bottom: 0px;">
+		  <div class="desc" style="background-color: #1cbee5; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>SUNWAY RELATED WORK TOOLS / PROCESSES</b><br><div style="font-size: 14px; padding-top: 5px;">Utilise technology to improve productivity</div>
+			</div></a>
+		  </div>
+		</div>
+		<!-- end sub-p1-section -->
+	</div>
+	<div style="height: 30px"></div>
+	<div class ="sub-p1-section">
+		<!-- SUNWAY LEADERSHIP COMPETENCIES tile  -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #1f4e79;">
+		  <img src="https://performancemanager10.successfactors.com/sunwaybposD1/p1-cv-pic4.png" alt="" style="height:120px; width:280px;">
+		  <div class="desc" style="background-color: #1f4e79; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>SUNWAY LEADERSHIP COMPETENCIES</b><br><div style="font-size: 14px; padding-top: 5px;">Leadership courses related to the 15 SLCs</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		<!-- SUSTAINABLE DEVELOPMENT GOALS tile -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #2e75b6;">
+			<img src="https://performancemanager10.successfactors.com//sunwaybposD1/sunway/SDG_Tile.jpg" alt="" style="height:120px; width:280px;">
+			<div class="desc" style="background-color: #2e75b6; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>SUSTAINABLE DEVELOPMENT GOALS</b><br><div style="font-size: 14px; padding-top:5px;">Sunway’s SDG initiatives</div>
+			</div></a>
+		  </div>
+		</div>
+		
+		
+		<!-- SKILLSOFT tile -->
+		<div class="responsive" style="padding-top: 5px; padding-left:15px;">
+		<a target="_top" href="https://performancemanager10.successfactors.com/sf/learning?destUrl=https%3A%2F%2Fsunwaybpos-stage.plateau.com%2Flearning%2Fuser%2Fdeeplink_redirect.jsp%3FlinkId%3DHOME_PAGE%26pageID%3D0172ca1c501c495eaaa60a7e69628e4d%26fromSF%3DY&company=sunwaybposD1">
+		<div class="gallery" style="background-color: #2e75b6;">
+			<img src="https://performancemanager10.successfactors.com/sunwaybposD1/t3-ico-skillsoft.png" alt="" style="height:120px; width:280px;">
+			<div class="desc" style="background-color: #2e75b6; color: 	#FFFFFF; width:280px; height: 85px; padding-top:5px;"><b>SKILLSOFT</b><br><div style="font-size: 14px; padding-top:5px;"><br>Learning experience platform with broad database</div>
+			</div></a>
+		  </div>
+		</div>
+		<!-- end sub-p1-section -->
+	</div>
+	<!-- end section p1 -->
+	</div>
+</body>
